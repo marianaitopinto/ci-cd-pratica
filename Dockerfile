@@ -8,4 +8,6 @@ EXPOSE 5000
 
 RUN npm i
 
-CMD ["node", "src/server.ts"]
+RUN npm run build
+
+CMD ["npm", "run", "start"]
